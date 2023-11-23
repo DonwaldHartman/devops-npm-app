@@ -10,5 +10,5 @@ RUN \
   npm install && \
   npm build
 #  npm install -g serve
-  serve -s build
+#  serve -s build
 CMD [ “node”, “App.js” ]

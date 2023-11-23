@@ -1,0 +1,48 @@
+{
+  "name": "Devops-Testing-App",
+  "version": "0.0.1",
+  "scripts": {
+    "install-dependencies:ci[main]": "npm install",
+    "build:ci[main]": "react-scripts build",
+    "test:ci[main]": "npm run env -s && npm test --code-coverage --watch=false",
+    "watch": "npm build --watch --configuration development",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.6",
+    "@testing-library/react": "^11.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-particles": "^2.9.3",
+    "react-scripts": "5.0.1",
+    "reactjs-popup": "^2.0.5",
+    "tslib": "^2.5.0",
+    "tsparticles": "^2.9.3",
+    "tsparticles-engine": "^2.9.3"
+  },
+  "devDependencies": {},
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "This is a basic react app for testing purposes",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
+}
+

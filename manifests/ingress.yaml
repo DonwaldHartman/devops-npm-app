@@ -50,6 +50,6 @@ spec:
                   name: http
   tls:
   - hosts:
-    - app.donwaldhartman.com
+    - app.donwaldhartman.co.za
     - argo.donwaldhartman.co.za
     secretName: letsencrypt-prod

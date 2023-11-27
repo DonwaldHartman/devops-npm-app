@@ -1,14 +1,17 @@
 ##DockerFile
 #Pulling node image from dockerhub
-FROM somansh1206/nodejs
-# Create app directory
-WORKDIR /usr/src/app
+FROM node:18-alpine
+
+WORKDIR /usr/app
+COPY ./ /usr/app
+
 # Copy code from root repo to the working directory
-COPY . .
+
 #Run node commands to build and serve the application
-RUN \
-  npm install && \
-  npm build
+RUN  npm install && npm run build
+
 #  npm install -g serve
 #  serve -s build
-CMD [ "node", "App.js" ]
+CMD [ "npm", "start" ]
+
+#CMD ["sleep", "infinity"]

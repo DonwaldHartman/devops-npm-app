@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-testing-app
+  labels:
+    app: devops-testing-app
+spec:
+  selector:
+    matchLabels:
+      app: devops-testing-app
+  template:
+    metadata:
+      labels:
+        app: devops-testing-app
+    spec:
+      containers:
+      - image: donwaldhartman/devops-testing-app:main
+        name: nodejs-api
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 3000
+      imagePullSecrets:
+      - name: registrycred
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: devops-testing-app-svc
+spec:
+    ports:
+    - name: "devops-testing-app"
+      targetPort: 3000
+      port: 3000
+      nodePort: 30253
+      protocol: TCP
+    selector:
+       app: devops-testing-app
+    type: NodePort

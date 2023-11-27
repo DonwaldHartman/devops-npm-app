@@ -23,7 +23,7 @@ spec:
             - containerPort: 80
           env:
             - name: url
-              value: https://app.donwaldhartman.co.za
+              value: app.donwaldhartman.co.za
           volumeMounts:
             - mountPath: /etc/nginx/conf.d
               name: nginx-config

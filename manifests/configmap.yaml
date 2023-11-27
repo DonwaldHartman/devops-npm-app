@@ -7,7 +7,7 @@ data:
     server {
         listen 80;
     
-        server_name app.donwaldhartman.co.za;
+        server_name 82.165.230.79;
     
         location / {
             proxy_pass http://82.165.230.79:30253; # Change this to the appropriate port if your application is not running on port 3000

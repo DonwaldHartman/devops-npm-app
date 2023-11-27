@@ -11,4 +11,4 @@ RUN \
   npm build
 #  npm install -g serve
 #  serve -s build
-CMD [ “node”, “App.js” ]
+CMD [ "node", "App.js" ]

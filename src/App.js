@@ -20,7 +20,7 @@ function App() {
                 <p className='Hero'><img src={devops_logo} className="" alt="logo"/></p>
 <h3> This is a sample project for Kubernetes Nodejs testing on DevOps projects</h3>
   <hr></hr>
-  <h3>Hey Donwald ! If you are able to read this then this app is clearly working </h3>
+  <h3>If you are able to read this then this app is clearly working </h3>
             </header>
             </div>
         </div>

@@ -14,7 +14,7 @@ spec:
         app: devops-testing-app
     spec:
       containers:
-      - image: donwaldhartman/devops-testing-app:main
+      - image: donwaldhartman/devops-testing-app:development
         name: nodejs-api
         imagePullPolicy: Always
         ports:

@@ -18,7 +18,7 @@ function App() {
             <div className='Container'>
             <header className="App-header">
                 <p className='Hero'><img src={devops_logo} className="" alt="logo"/></p>
-<h3> This is a sample project for Node testing on DevOps projects</h3>
+<h3> This is a sample project for Nodejs testing on DevOps projects</h3>
   <hr></hr>
   <h3>If you are able to read this then this app is clearly working </h3>
             </header>

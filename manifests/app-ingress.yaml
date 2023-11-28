@@ -17,18 +17,7 @@ spec:
                 name: devops-testing-app-svc
                 port:
                   number: 30253
-    - host: argo.donwaldhartman.co.za
-      http:
-        paths:
-          - pathType: Prefix
-            path: /
-            backend:
-              service:
-                name: argocd-server
-                port:
-                  number: 30080
   tls:
     - hosts:
         - app.donwaldhartman.co.za
-        - argo.donwaldhartman.co.za
       secretName: letsencrypt-prod

@@ -2,21 +2,12 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress
+  namespace: argocd
   annotations:
     kubernetes.io/ingress.class: nginx
     cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
   rules:
-    - host: app.donwaldhartman.co.za
-      http:
-        paths:
-          - pathType: Prefix
-            path: /
-            backend:
-              service:
-                name: devops-testing-app-svc
-                port:
-                  number: 30253
     - host: argo.donwaldhartman.co.za
       http:
         paths:
@@ -26,9 +17,8 @@ spec:
               service:
                 name: argocd-server
                 port:
-                  number: 30080
+                  number: 8080
   tls:
     - hosts:
-        - app.donwaldhartman.co.za
         - argo.donwaldhartman.co.za
-      secretName: letsencrypt-prod
+      secretName: letsencrypt-prod  

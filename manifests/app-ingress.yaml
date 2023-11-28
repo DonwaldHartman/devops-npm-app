@@ -16,7 +16,7 @@ spec:
               service:
                 name: devops-testing-app-svc
                 port:
-                  number: 30253
+                  number: 3000
   tls:
     - hosts:
         - app.donwaldhartman.co.za

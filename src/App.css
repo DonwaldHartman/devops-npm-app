@@ -20,7 +20,7 @@ margin:1%;
 }
 
 
-.Hero 
+.Hero
 {
 text-align: center;
 margin: 15px 0;
@@ -43,14 +43,14 @@ margin: 15px 0;
 
 
 .term1 {
-    
+
     pointer-events: none;
     text-align: center;
     box-shadow: 0 0 8px 3px #000;
 }
 
 .term2 {
-    
+
     cursor: pointer;
     text-align: center;
     box-shadow: 0 0 8px 3px #000;
@@ -102,8 +102,8 @@ margin: 15px 0;
     .modal {
         font-size: 12px;
       }
-    
-      .modal img {    
+
+      .modal img {
         width: 97%;
         margin: 1%;}
 
@@ -143,8 +143,8 @@ margin: 15px 0;
 
 
       hr {
-        border: 0; 
-        height: 3px; 
+        border: 0;
+        height: 3px;
         width: 100%;
         background-image: linear-gradient(to right, #ffffff14, #0e49ba, #0e49ba, #ffffff14);
       }
